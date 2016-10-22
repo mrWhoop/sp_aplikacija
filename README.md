@@ -18,4 +18,11 @@ V spletni trgovini se bodo prodajale plošče in CD-ji z glasbo, tako da so cilj
 
 Cilj je da, aplikacija deluje tako na stacionanih (PC) kot tudi na mobilnih napravah(telefon, tablica). Vendar bo verjetno imela omejeno funkcionalnost znotraj mini brskalnikov.
 
+## Uporabljene tehnologije
+
+Za front-end je planirana uporaba spletnih tehnologij kot so:
+ * HTML5
+ * CSS
+ * JavaScript
+
 
