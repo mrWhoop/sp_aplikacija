@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset = "utf-8">
+	<title>Stacunaa</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/skripte.js"></script>
+</head>
+
+<body>
+	<header class="top-wrapper">
+		<div class="div-center">
+			<div class="div-left">
+				<div class="div-logo">
+				STACUNAA
+				</div>
+				<nav class="div-nav">
+					<ul class="top-nav">
+						<li class="top-nav-li"><a href="#">PLOŠČE</a></li>
+						<li class="top-nav-li top-seperator">|</li>
+						<li class="top-nav-li"><a href="#">KASETE</a></li>
+						<li class="top-nav-li top-seperator">|</li>
+						<li class="top-nav-li"><a href="#">CD-jke</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="div-right-center">
+				<p class="p-social">
+					<a href="https://twitter.com" target="_blank"><img id="twitter" src="img/trans.png"></a>
+					<a href="https://www.facebook.com" target="_blank"><img id="facebook" src="img/trans.png"></a>
+					<a href="https://plus.google.com" target="_blank"><img id="google-plus" src="img/trans.png"></a>
+					<a href="https://www.linkedin.com" target="_blank"><img id="linkedin" src="img/trans.png"></a>
+				</p>
+				<p class="p-login">
+					Vozicek (0) | <a href="#prijava" >Prijava</a> | <a href="register.html" >Registracija</a>
+				</p>
+				<div id="prijava" class="overlay">
+					<div class="popup">
+						<div class="content">
+							<h2>Prijava</h2>
+							<a class="close" href="#">×</a>
+							<form action="index.html" method="post">
+								<label>e-mail:</label>
+								<input type="email" placeholder="e-mail"><br/>
+								<label>geslo:</label>
+								<input type="password" placeholder="geslo"><br/>
+								<input type="submit" value="Prijavi me"><br/>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>	
+	<div class="div-wrapper">
+		<div class="div-center">
+			<nav class="div-izdelki-nav">
+				<ul class="izdelki-ul">
+					<li class="izdelki-nav-li"><a onclick="dropDown('1')" href="#">AVANT-GARDE</a></li>			
+					<div id="1" class="hide" class="dropdown-content">
+						<ul class="izdelki-ul-sub">
+							<li class="izdelki-li-sub"><a href="#">The Bushes</a></li>
+							<li class="izdelki-li-sub"><a href="#">Landed</a></li>
+							<li class="izdelki-li-sub"><a href="#">Xina Xurner</a></li>
+							<li class="izdelki-li-sub"><a href="#">Hassan Khan</a></li>
+						</ul>
+					</div>
+					<li class="izdelki-nav-li"><a onclick="dropDown('2')" href="#">BLUES</a></li>
+					<div id="2" class="hide" class="dropdown-content">
+						<ul class="izdelki-ul-sub">
+							<li class="izdelki-li-sub"><a href="#">Muddy Waters</a></li>
+							<li class="izdelki-li-sub"><a href="#">B.B. King</a></li>
+							<li class="izdelki-li-sub"><a href="#">Howlin' Wolf</a></li>
+							<li class="izdelki-li-sub"><a href="#">Robert Jhonson</a></li>
+							<li class="izdelki-li-sub"><a href="#">John Lee Hooker</a></li>
+						</ul>
+					</div>
+					<li class="izdelki-nav-li"><a onclick="dropDown('3')" href="#">KLASIČNA</a></li>
+					<div id="3" class="hide" class="dropdown-content">
+						<ul class="izdelki-ul-sub">
+							<li class="izdelki-li-sub"><a href="#">Johann Sebastian Bach</a></li>
+							<li class="izdelki-li-sub"><a href="#">Wolfgang Amadeus Mozart</a></li>
+							<li class="izdelki-li-sub"><a href="#">Ludwig van Beethoven</a></li>
+							<li class="izdelki-li-sub"><a href="#">Richard Wagner</a></li>
+							<li class="izdelki-li-sub"><a href="#">Giuseppe Verdi</a></li>
+						</ul>
+					</div>
+					<li class="izdelki-nav-li"><a onclick="dropDown('4')" href="#">COUNTRY</a></li>
+					<div id="4" class="hide" class="dropdown-content">
+						<ul class="izdelki-ul-sub">
+							<li class="izdelki-li-sub"><a href="#">George Strait</a></li>
+							<li class="izdelki-li-sub"><a href="#">Merle Haggard</a></li>
+							<li class="izdelki-li-sub"><a href="#">Willie Nelson</a></li>
+							<li class="izdelki-li-sub"><a href="#">Alabama</a></li>
+							<li class="izdelki-li-sub"><a href="#">Conway Twitty</a></li>
+							<li class="izdelki-li-sub"><a href="#">Charley Pride</a></li>
+						</ul>
+					</div>
+					<li class="izdelki-nav-li"><a onclick="dropDown('5')" href="#">JAZZ</a></li>
+					<div id="5" class="hide" class="dropdown-content">
+						<ul class="izdelki-ul-sub">
+							<li class="izdelki-li-sub"><a href="#">Charles Mingus</a></li>
+							<li class="izdelki-li-sub"><a href="#">John Coltrane</a></li>
+							<li class="izdelki-li-sub"><a href="#">Herbie Hancock</a></li>
+							<li class="izdelki-li-sub"><a href="#">Miles Davis</a></li>
+							<li class="izdelki-li-sub"><a href="#">Kurt Elling</a></li>
+							<li class="izdelki-li-sub"><a href="#">Thelonious Monk</a></li>
+							<li class="izdelki-li-sub"><a href="#">Wynton Marsalis</a></li>
+						</ul>
+					</div>
+					<li class="izdelki-nav-li"><a onclick="dropDown('6')" href="#">POP</a></li>
+					<div id="6" class="hide" class="dropdown-content">
+						<ul class="izdelki-ul-sub">
+							<li class="izdelki-li-sub"><a href="#">Michael Jackson</a></li>
+							<li class="izdelki-li-sub"><a href="#">Maroon 5</a></li>
+							<li class="izdelki-li-sub"><a href="#">Bruno Mars</a></li>
+							<li class="izdelki-li-sub"><a href="#">The Chainsmokers</a></li>
+							<li class="izdelki-li-sub"><a href="#">Madonna</a></li>
+							<li class="izdelki-li-sub"><a href="#">Katy Perry</a></li>
+							<li class="izdelki-li-sub"><a href="#">Taylor Swift</a></li>
+							<li class="izdelki-li-sub"><a href="#">Rihanna</a></li>
+							<li class="izdelki-li-sub"><a href="#">Lady Gaga</a></li>
+						</ul>
+					</div>
+					<li class="izdelki-nav-li"><a onclick="dropDown('7')" href="#">ROCK</a></li>
+					<div id="7" class="hide" class="dropdown-content">
+						<ul class="izdelki-ul-sub">
+							<li class="izdelki-li-sub"><a href="#">Imagine Dragons</a></li>
+							<li class="izdelki-li-sub"><a href="#">Foo Fighters</a></li>
+							<li class="izdelki-li-sub"><a href="#">AC/DC</a></li>
+							<li class="izdelki-li-sub"><a href="#">Breaking Benjamin</a></li>
+							<li class="izdelki-li-sub"><a href="#">U2</a></li>
+							<li class="izdelki-li-sub"><a href="#">The Rolling Stones</a></li>
+						</ul>
+					</div>
+					<li class="izdelki-nav-li"><a onclick="dropDown('8')" href="#">ROCK'N ROLL</a></li>
+					<div id="8" class="hide" class="dropdown-content">
+						<ul class="izdelki-ul-sub">
+							<li class="izdelki-li-sub"><a href="#">Elvis Presly</a></li>
+							<li class="izdelki-li-sub"><a href="#">The Beatles</a></li>
+							<li class="izdelki-li-sub"><a href="#">Led Zeppelin</a></li>
+							<li class="izdelki-li-sub"><a href="#">Queen</a></li>
+							<li class="izdelki-li-sub"><a href="#">Pink Floyd</a></li>
+						</ul>
+					</div>
+					<li class="izdelki-nav-li"><a onclick="dropDown('9')" href="#">PUNK</a></li>
+					<div id="9" class="hide" class="dropdown-content">
+						<ul class="izdelki-ul-sub">
+							<li class="izdelki-li-sub"><a href="#">Sex Pistols</a></li>
+							<li class="izdelki-li-sub"><a href="#">The Ramones</a></li>
+							<li class="izdelki-li-sub"><a href="#">Virus</a></li>
+							<li class="izdelki-li-sub"><a href="#">The Clash</a></li>
+							<li class="izdelki-li-sub"><a href="#">Descendents</a></li>
+							<li class="izdelki-li-sub"><a href="#">Rancid</a></li>
+							<li class="izdelki-li-sub"><a href="#">Bad Religion</a></li>
+						</ul>
+					</div>
+					<li class="izdelki-nav-li"><a onclick="dropDown('10')" href="#">PUNK-ROCK</a></li>
+					<div id="10" class="hide" class="dropdown-content">
+						<ul class="izdelki-ul-sub">
+							<li class="izdelki-li-sub"><a href="#">Green Day</a></li>
+							<li class="izdelki-li-sub"><a href="#">Sum41</a></li>
+							<li class="izdelki-li-sub"><a href="#">Blink-182</a></li>
+							<li class="izdelki-li-sub"><a href="#">Bowling foe Soup</a></li>
+							<li class="izdelki-li-sub"><a href="#">The Offspring</a></li>
+						</ul>
+					</div>
+					<li class="izdelki-nav-li"><a onclick="dropDown('11')" href="#">METAL</a></li>
+					<div id="11" class="hide" class="dropdown-content">
+						<ul class="izdelki-ul-sub">
+							<li class="izdelki-li-sub"><a href="#">Metallica</a></li>
+							<li class="izdelki-li-sub"><a href="#">Iron Maiden</a></li>
+							<li class="izdelki-li-sub"><a href="#">Slayer</a></li>
+							<li class="izdelki-li-sub"><a href="#">Megadeth</a></li>
+							<li class="izdelki-li-sub"><a href="#">Slipknot</a></li>
+							<li class="izdelki-li-sub"><a href="#">KoRn</a></li>
+						</ul>
+					</div>
+					<li class="izdelki-nav-li"><a onclick="dropDown('12')" href="#">RAP</a></li>
+					<div id="12" class="hide" class="dropdown-content">
+						<ul class="izdelki-ul-sub">
+							<li class="izdelki-li-sub"><a href="#">Eminem</a></li>
+							<li class="izdelki-li-sub"><a href="#">Snoop Dog</a></li>
+							<li class="izdelki-li-sub"><a href="#">50 Cent</a></li>
+							<li class="izdelki-li-sub"><a href="#">DJ Khaled</a></li>
+							<li class="izdelki-li-sub"><a href="#">Ludacris</a></li>
+						</ul>
+					</div>
+					<li class="izdelki-nav-li"><a onclick="dropDown('13')" href="#">REGGAE</a></li>
+					<div id="13" class="hide" class="dropdown-content">
+						<ul class="izdelki-ul-sub">
+							<li class="izdelki-li-sub"><a href="#">Bob Marley</a></li>
+						</ul>
+					</div>
+					<li class="izdelki-nav-li"><a onclick="dropDown('14')" href="#">DISCO</a></li>
+					<div id="14" class="hide" class="dropdown-content">
+						<ul class="izdelki-ul-sub">
+							<li class="izdelki-li-sub"><a href="#">ABBA</a></li>
+							<li class="izdelki-li-sub"><a href="#">Sylvester</a></li>
+							<li class="izdelki-li-sub"><a href="#">Chic</a></li>
+							<li class="izdelki-li-sub"><a href="#">Village People</a></li>
+							<li class="izdelki-li-sub"><a href="#">Donna Summer</a></li>
+						</ul>
+					</div>
+					<li class="izdelki-nav-li"><a onclick="dropDown('15')" href="#">ELECTRONIC</a></li>
+					<div id="15" class="hide" class="dropdown-content">
+						<ul class="izdelki-ul-sub">
+							<li class="izdelki-li-sub"><a href="#">David Guetta</a></li>
+							<li class="izdelki-li-sub"><a href="#">DJ Snake</a></li>
+							<li class="izdelki-li-sub"><a href="#">Skrillex</a></li>
+							<li class="izdelki-li-sub"><a href="#">Alesso</a></li>
+							<li class="izdelki-li-sub"><a href="#">Deadmau5</a></li>
+							<li class="izdelki-li-sub"><a href="#">Tiesto</a></li>
+							<li class="izdelki-li-sub"><a href="#">Ratatat</a></li>
+						</ul>
+					</div>
+				</ul>
+			</nav>
+			<div class="div-content">
+				But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+			</div>
+		</div>
+	</div>
+</body>
+<footer>bosa noga</footer>
+</html>
