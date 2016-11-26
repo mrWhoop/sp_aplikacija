@@ -11,14 +11,16 @@
 	<header class="top-wrapper">
 		<div class="div-top-center">
 			<div class="div-left">
-				<div class="div-logo">
+				<a href="index.html"><div class="div-logo">
 				STACUNAA
-				</div>
+				</div></a>
 				<nav class="div-nav">
 				<ul class="top-nav">
-					<li class="top-nav-li"><a href="#">PLOŠČE</a></li>
-					<li class="top-nav-li"><a href="#">KASETE</a></li>
-					<li class="top-nav-li"><a href="#">CD-jke</a></li>
+					<li class="top-nav-li"><a href="izdelki.html">PLOŠČE</a></li>
+
+					<li class="top-nav-li"><a href="izdelki.html">KASETE</a></li>
+
+					<li class="top-nav-li"><a href="izdelki.html">CD-jke</a></li>
 				</ul>
 				</nav>
 			</div>
@@ -31,7 +33,7 @@
 					<a href="https://www.linkedin.com" target="_blank"><img id="linkedin" src="img/trans.png"></a>
 				</p>
 				<p class="p-login">
-					Vozicek (0) | <a href="#prijava" >Prijava</a> | <a href="registracija.html">Registracija</a>
+					<a href="vozicek.html" >Vozicek (0)</a> | <a href="#prijava" >Prijava</a> | <a href="registracija.html">Registracija</a>
 				</p>
 				<div id="prijava" class="overlay">
 					<div class="popup">
@@ -55,30 +57,32 @@
 
 	<div class="div-wrapper">
 		<div class="div-center">
-			<form action="index.html" method="post">
-				<div>Naziv:</div>
-				<input type="radio" name="naziv" value="G">G. <input type = "radio" name="naziv" value="Ga">Ga<br/>
-				<div>Ime:</div>
-				<input type="text" placeholder="Ime">
-				<div>Priimek:</div>
-				<input type="text" placeholder="Priimek"><br/>
-				<div>Naslov:</div>
-				<input type="text" placeholder="Naslov">
-				<div>Pošta:</div><input type="text" placeholder="Številka"><input type="text" placeholder="Kraj">
-				<div>E-mail:</div>
-				<input type="email" placeholder="e-mail"><br/>
-				<input type="email" placeholder="potrdite e-mail"><br/>
-				<div>GSM:</div>
-				<input type="text" pattern="{9}"><br/>
-				<div>Geslo:</div>
-				<input type="password" placeholder="geslo"><br/>
-				<input type="password" placeholder="potrdite geslo"><br/>
-				<input type="submit" value="Registriraj me"><br/>
-			</form>
+			<div class="register-form">
+				<form action="index.html" method="post">
+					<div>Naziv:</div>
+					<input type="radio" name="naziv" value="G">G. <input type = "radio" name="naziv" value="Ga">Ga<br/>
+					<div>Ime:</div>
+					<input type="text" placeholder="Ime">
+					<div>Priimek:</div>
+					<input type="text" placeholder="Priimek"><br/>
+					<div>Naslov:</div>
+					<input type="text" placeholder="Naslov">
+					<div>Pošta:</div><input type="text" placeholder="Številka"><input type="text" placeholder="Kraj">
+					<div>E-mail:</div>
+					<input type="email" placeholder="e-mail"><br/>
+					<input type="email" placeholder="potrdite e-mail"><br/>
+					<div>GSM:</div>
+					<input type="text" pattern="{9}"><br/>
+					<div>Geslo:</div>
+					<input type="password" placeholder="geslo"><br/>
+					<input type="password" placeholder="potrdite geslo"><br/>
+					<input type="submit" value="Registriraj me"><br/>
+				</form>
+			</div>
 		</div>
 	</div>
 </body>
 
-<footer>noga</footer>
+<footer>Izjava o zasebnosti | Pogoji uporabe</footer>
 
 </html>

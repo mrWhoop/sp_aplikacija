@@ -13,10 +13,10 @@ body {
 	overflow: hidden;
 }
 	.div-left{
-		overflow: hidden;
+		display:flex;
 	}
 	.div-right{
-		overflow: hidden;
+		display:flex;
 	}
 	.div-center{
 		float: none;
@@ -35,6 +35,7 @@ body {
 		.izdelek{
 			border: 3px solid;
 			margin: 2px;
+			margin-left: 6px;
 			border-color:LightGrey;
 			border-radius: 3px;
 		}
@@ -58,13 +59,13 @@ body {
 				clear:both;
 			}
 			.cena a:hover{
-				background-color: #008080;
+				background-color: #23D8D8;
 				color:white;
 				border:2px;
 				border-radius: 3px;
 			}
 			.cena a:hover div{
-				background-color: #008080;
+				background-color: #23D8D8;
 				color:#0B1123;
 			}
 			.cena a:hover img{
@@ -88,7 +89,7 @@ body {
 		    margin:2px;
 		}
 		.izdelki-nav-li a:hover {
-	    	background-color: #008080;
+	    	background-color: #23D8D8;
 	    	color:#0B1123;
 		}
 		.hide{
@@ -109,12 +110,12 @@ body {
 		    padding: 8px 16px;
 		    text-decoration: none;
 		    text-align: left;
-		    background-color: #008080;
+		    background-color: #23D8D8;
 		    margin:2px;
 		}
 		.izdelki-li-sub a:hover{
 			background-color: #0B1123;
-	    	color:#008080;
+	    	color:#23D8D8;
 		}
 .top-wrapper {
 	width: 100%;
@@ -137,7 +138,6 @@ body {
 		font-weight: bold;
 	}
 	.div-right-center{
-		float:right;
 		color:white;
 	}
 	.p-login{
@@ -179,8 +179,96 @@ body {
 		    text-decoration: none;
 		}
 		.top-nav-li a:hover{
-	    	background-color: #008080;
+	    	background-color: #23D8D8;
 	    	color:#0B1123;
+		}
+.vozicek-wrapper{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+	.vozicek-element{
+		display: flex;
+		align-items:center;
+		justify-content:space-between;
+		width: 100%;
+		height:60px;
+		border-bottom: 2px solid LightGrey;
+	}
+		.vozicek-opis{
+			padding-left: 20px;
+		}
+		.vozicek-cena{
+			padding-right: 20px;
+		}
+	.vozicek-skupaj{
+		float:right;
+		font-size: 25px;
+		padding-top: 10px;
+		padding-bottom:10px;
+		padding-right: 10px;
+		clear:both;
+	}
+	.register-form{
+		padding: 5px;
+	}
+.izdelek-izdelek{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	margin-top: 10px;
+}
+	.izdelek-slika{
+		border: 2px solid LightGrey;
+		border-radius: 2px;
+		margin-left: 3px;
+	}
+	.izdelek-desno{
+		text-align: right;
+		border: 2px solid LightGrey;
+		border-radius: 2px;
+		flex-grow:3;
+		margin-left:5px;
+	}
+		.izdelek-izvajalec{
+			font-size: 40px;
+			margin-top: 0;
+			margin-bottom: 0;
+			padding-right: 5px;
+		}
+		.izdelek-plata{
+			font-size: 25px;
+			padding-right: 5px;
+			padding-top: 3px;
+			padding-bottom: 15px;
+			border-bottom:2px solid LightGrey;
+			margin:0;
+			margin-top: 15px;	
+		}
+	.izdelek-naziv{
+
+	}
+	.izdelek-cena{
+
+	}
+		.izdelek-cena-maloprodajna{
+			border-bottom:2px solid LightGrey;
+			padding-right: 5px;
+		}
+		.izdelek-cena-prihranek{
+			margin-top: 10px;
+			font-size: 20px;
+			border-bottom:2px solid LightGrey;
+			padding-right: 5px;
+		}
+		.izdelek-cena-spletna{
+			margin-top:10px;
+			padding-right: 5px;
+			font-size: 30px;
+			border-bottom:2px solid LightGrey;
+		}
+		.izdelek-vozicek{
+			float:left;
 		}
 .overlay{
 	position: absolute;
@@ -246,6 +334,20 @@ body {
 	    cursor: pointer;
 	    width: 100%;
 	}
+	input.search{
+		margin:2px;
+		border:none;
+		border-bottom: 2px solid;
+		border-color: #0B1123;
+	}
+	input.search:focus{
+		outline:none;
+		background-color: LightBlue;
+	}
+	.search-form{
+		width:80%;
+		float:right;
+	}
 a:link {
     text-decoration: none;
     color:white;
@@ -265,8 +367,71 @@ a:active {
     text-decoration: underline;
     color:#23D8D8;
 }
-
-
+.vozicek-opis a{
+	color:black;			
+}
+.vozicek-opis a:hover{
+	color:#23D8D8;			
+}
+.vozicek-wrapper button{
+	background-color: #23D8D8;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+.odstrani button{
+			background-color: #0B1123;
+		    border: none;
+		    color: white;
+		    padding: 5px;
+		    padding-left: 10px;
+		    padding-right: 10px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		}
+		.odstrani button:hover{
+			background-color: #23D8D8;
+	    	color:#0B1123;
+		}
+		.izdelek-vozicek a div{
+			max-width: 100%;
+			margin-left: 20px;
+			padding-top: 10px;
+			float:right;
+		}
+		.izdelek-vozicek {
+			width: 100%;
+			display: block;
+			clear:both;
+			background-color: #23D8D8;
+			float:right;
+			padding-top: 0;
+			text-align: center;
+			font-size: 45px;
+		}
+		.izdelek-vozicek div{
+			padding-right: 15px;
+		}
+		.izdelek-vozicek a:hover{
+			background-color: #23D8D8;
+			color:white;
+		}
+		.izdelek-vozicek a img{
+			float:left;
+		}
+		.izdelek-vozicek a:hover img{
+				margin-left: 20px;
+		}
+		.izdelek-vozicek a:hover div{
+			background-color: #23D8D8;
+	    	color:#0B1123;
+		}
 
 #twitter {
     width: 55px;
@@ -289,9 +454,218 @@ a:active {
     height: 55px;
     background: url(../img/sprite.png) 0 -118px;	
 }
+.tabs {
+  position: relative;   
+  min-height: 650px;
+  clear: both;
+  margin: 25px 0;
+  margin-left: 5px;
+}
+.tab {
+	float: left;
+}
+.tab label {
+  	background: #eee; 
+  	padding: 10px; 
+  	border: 2px solid LightGrey; 
+  	margin-left: -1px; 
+  	position: relative;
+  	left: 1px;
+}
+.tab [type=radio] {
+  	display: none;   
+}
+.tab-content {
+  	position: absolute;
+  	top: 28px;
+  	left: 0;
+  	background: white;
+  	right: 0;
+  	bottom: 0;
+  	padding: 20px;
+  	border: 2px solid LightGrey;  
+}
+[type=radio]:checked ~ label {
+  	background: white;
+  	border-bottom: 1px solid white;
+  	z-index: 2;
+}
+[type=radio]:checked ~ label ~ .tab-content {
+  	z-index: 1;
+}
+.izdelek-content{
+	width:80%;
+	float:right;
+}
+.comment h3{
+	border-bottom: 1px solid LightGrey;
+}
+textarea{
+	width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    margin-top: 25px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    resize: none;
+}
+textarea:focus{
+	background-color: #f8f8f8;
+	outline: none;
+}
+.newComment h4{
+	margin-bottom: 0;
+}
+.div-landing-contenet{
+
+
+}
+.landing-item {
+  margin-left: 5px;
+}
+.landing-item, .landing-search-form{
+		width:260px;
+		float:right;
+}
+input.landing-search{
+		margin:2px;
+		border:none;
+		border-bottom: 2px solid;
+		border-color: #0B1123;
+	}
+	input.landing-search:focus{
+		outline:none;
+		background-color: LightBlue;
+	}
+/* Slideshow container */
+.slideshow-container {
+  margin-top: 5px;
+  max-width: 690px;
+  min-width: 400px;
+  position: relative;
+  float:left;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #23D8D8;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.slides-img{
+	width:100%;
+}
+.slides-caption{
+	text-align:center;
+}
+
+
+
+
+
+
+
+
+.tabela{
+	clear:both;
+	width: 100%;
+	overflow-x:auto;
+	margin-top: 20px;
+}
+.tabela table, th, td {
+   border:0;
+}
+.tabela table{
+	width: 100%;
+	table-layout: fixed;
+}
+.tabela th{
+	background-color: #23D8D8;
+    color: white;
+    text-align: middle;
+}
 footer {
 	background-color: #0B1123;
 	color: white;
+	text-align: right;
+	height: 60px;
+	padding-top: 30px;
+	padding-right: 60px;
 }
 @media screen and (max-width: 1024px){
 	.div-left{
@@ -300,6 +674,17 @@ footer {
 	.div-nav{
 		position:relative;
 	}
+	.div-right-center{
+		margin: 0 auto;
+		color:white;
+	}
+	.div-logo{
+		display:none;
+	}
+	.top-nav{
+		margin: 0 auto;
+	}
+
 }
 @media screen and (max-width: 414px){
 	.div-left{
@@ -308,9 +693,7 @@ footer {
 	.div-nav{
 		position:relative;
 	}
-	.div-logo{
-		display:none;
-	}
+	c
 	.div-right-center{
 		align-self:center;
 		color:white;
@@ -321,8 +704,23 @@ footer {
 	.div-content{
 		width:100%;
 	}
-
-}
+	.div-right-center{
+		margin: 0 auto;
+		color:white;
+	}
+	.top-nav{
+		margin: 0 auto;
+	}
+	.search-form{
+		width:100%;
+	}
+	.landing-search-form{
+		width:100%;
+	}
+	.izdelek-content{
+		width:100%;
+		float:right;
+	}
 /*
 em
 rem (root em)
