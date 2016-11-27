@@ -633,14 +633,6 @@ input.landing-search{
 .slides-caption{
 	text-align:center;
 }
-
-
-
-
-
-
-
-
 .tabela{
 	clear:both;
 	width: 100%;
@@ -657,7 +649,7 @@ input.landing-search{
 .tabela th{
 	background-color: #23D8D8;
     color: white;
-    text-align: middle;
+    text-align: center;
 }
 footer {
 	background-color: #0B1123;
@@ -721,6 +713,7 @@ footer {
 		width:100%;
 		float:right;
 	}
+}
 /*
 em
 rem (root em)
