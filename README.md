@@ -40,3 +40,4 @@ Crome:
 
 ## Komentar
 Stran še ni dokončana, na landing page manjka še del funkcionalnosti, ki je opisan v wireframe-u. Pravtako bo potrebno rešiti težavo z pop-up prijavo, saj iz nekega razloga ne deluje pravilno (slideshow na index.html in tab-i na izdelek.html). Izboljšati bo potrbno tudi prikaz strani na različnih velikostih zaslonov, saj trenutno deluje "le za silo".
+Največ časa je bilo vloženo v pop-up prijavo in navigacijski menu na izdelki.html, prva je implementirana brez uporabe java scripta, medtem ko je druga zaradi obsežnosti z njim.
